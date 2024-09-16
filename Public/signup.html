@@ -1,44 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
-    <link href="/Public/styles.css" rel="stylesheet"> <!-- styles.css is in compiled Tailwind file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
-        <h1 class="text-2xl font-bold text-center mb-6">Create an Account</h1>
-        <form id="signupForm" class="space-y-4">
-            <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
-                <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+<body class="min-h-screen flex flex-col" style="background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGFncmljdWx0dXJlfGVufDB8fHx8MTY5NzQ0NjYwNQ&ixlib=rb-1.2.1&q=80&w=1080'); background-size: cover; background-position: center;">
+    <!-- Navigation Bar -->
+    <nav class="bg-green-600 shadow-md rounded-b-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-white">
+                <a href="#">SmartAgriContract</a>
             </div>
-
-            <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
-                <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <div class="flex space-x-4">
+                <a href="/Public/index.html" class="text-white hover:text-gray-200">Home</a>
             </div>
+        </div>
+    </nav>
 
-            <div>
-                <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
-                <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            </div>
-
-            <div>
-                <label for="role" class="block text-sm font-medium text-gray-700">Role:</label>
-                <select id="role" name="role" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                    <option value="farmer">Farmer</option>
+    <!-- Main Content -->
+    <div class="flex-grow flex items-center justify-center">
+        <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Create an Account</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="name">Name:</label>
+                    <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" type="text" id="name" name="name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="email">Email:</label>
+                    <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" type="email" id="email" name="email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="password">Password:</label>
+                    <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" type="password" id="password" name="password">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="role">Role:</label>
+                    <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" id="role" name="role">
+                        <option value="farmer">Farmer</option>
                     <option value="dealer">Dealer</option>
-                </select>
-            </div>
-
-            <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign Up</button>
-        </form>
-
-        <p class="mt-6 text-center text-sm text-gray-600">
-            Already have an account? <a href="/Public/login.html" class="text-indigo-600 hover:text-indigo-500">Log In</a>
-        </p>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <button class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600">Sign Up</button>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-600">Already have an account? <a href="/Public/login.html" class="text-green-600">Log In</a></p>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="/Public/js/signup.js"></script> <!-- JavaScript file for handling sign-up logic -->
 </body>

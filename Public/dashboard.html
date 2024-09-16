@@ -1,11 +1,256 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    <h1>welcome to dashboard</h1>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-gray-900 text-white min-h-screen">
+    <div class="p-4 flex items-center">
+     <i class="fas fa-user-circle text-2xl mr-2"></i>
+     <h1 class="text-xl font-bold">
+      Material Dashboard 2
+     </h1>
+    </div>
+    <nav class="mt-10">
+     <a class="flex items-center p-4 text-pink-500 bg-gray-800" href="#">
+      <i class="fas fa-tachometer-alt mr-3">
+      </i>
+      Dashboard
+     </a>
+     <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+      <i class="fas fa-table mr-3">
+      </i>
+      Tables
+     </a>
+     <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+      <i class="fas fa-file-invoice-dollar mr-3">
+      </i>
+      Billing
+     </a>
+     <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+      <i class="fas fa-vr-cardboard mr-3">
+      </i>
+      Virtual Reality
+     </a>
+     <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+      <i class="fas fa-language mr-3">
+      </i>
+      RTL
+     </a>
+     <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+      <i class="fas fa-bell mr-3">
+      </i>
+      Notifications
+     </a>
+     <div class="mt-10">
+      <h2 class="text-gray-500 px-4">
+       ACCOUNT PAGES
+      </h2>
+      <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+       <i class="fas fa-user mr-3">
+       </i>
+       Profile
+      </a>
+      <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+       <i class="fas fa-sign-in-alt mr-3">
+       </i>
+       Sign In
+      </a>
+      <a class="flex items-center p-4 hover:bg-gray-800" href="#">
+       <i class="fas fa-user-plus mr-3">
+       </i>
+       Sign Up
+      </a>
+     </div>
+    </nav>
+    <div class="p-4 mt-auto">
+     <button class="w-full bg-gray-800 text-white py-2 rounded border border-pink-500">
+      DOCUMENTATION
+     </button>
+     <button class="w-full bg-pink-500 text-white py-2 rounded mt-2">
+      UPGRADE TO PRO
+     </button>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <div>
+      <h2 class="text-2xl font-bold">
+       Dashboard
+      </h2>
+      <p class="text-gray-500">
+       Pages / Dashboard
+      </p>
+     </div>
+     <div class="flex items-center space-x-4">
+      <input class="px-4 py-2 border rounded" placeholder="Type here..." type="text"/>
+      <button class="bg-pink-500 text-white px-4 py-2 rounded">
+       ONLINE BUILDER
+      </button>
+      <i class="fas fa-star text-gray-500">
+      </i>
+      <span>
+       10,999
+      </span>
+      <i class="fas fa-cog text-gray-500">
+      </i>
+      <i class="fas fa-user text-gray-500">
+      </i>
+      <span>
+       Sign In
+      </span>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+     <div class="bg-white p-4 rounded shadow">
+      <div class="flex items-center">
+       <div class="bg-gray-800 p-2 rounded mr-4">
+        <i class="fas fa-wallet text-white">
+        </i>
+       </div>
+       <div>
+        <p class="text-gray-500">
+         Today's Money
+        </p>
+        <p class="text-2xl font-bold">
+         $53k
+        </p>
+       </div>
+      </div>
+      <p class="text-green-500 mt-2">
+       +55% than last week
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <div class="flex items-center">
+       <div class="bg-pink-500 p-2 rounded mr-4">
+        <i class="fas fa-user text-white">
+        </i>
+       </div>
+       <div>
+        <p class="text-gray-500">
+         Today's Users
+        </p>
+        <p class="text-2xl font-bold">
+         2,300
+        </p>
+       </div>
+      </div>
+      <p class="text-green-500 mt-2">
+       +3% than last month
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <div class="flex items-center">
+       <div class="bg-green-500 p-2 rounded mr-4">
+        <i class="fas fa-user text-white">
+        </i>
+       </div>
+       <div>
+        <p class="text-gray-500">
+         New Clients
+        </p>
+        <p class="text-2xl font-bold">
+         3,462
+        </p>
+       </div>
+      </div>
+      <p class="text-red-500 mt-2">
+       -2% than yesterday
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <div class="flex items-center">
+       <div class="bg-blue-500 p-2 rounded mr-4">
+        <i class="fas fa-briefcase text-white">
+        </i>
+       </div>
+       <div>
+        <p class="text-gray-500">
+         Sales
+        </p>
+        <p class="text-2xl font-bold">
+         $103,430
+        </p>
+       </div>
+      </div>
+      <p class="text-green-500 mt-2">
+       +5% than yesterday
+      </p>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-pink-500 p-4 rounded shadow">
+      <div class="flex justify-between items-center">
+       <h3 class="text-white">
+        Website Views
+       </h3>
+       <i class="fas fa-ellipsis-h text-white">
+       </i>
+      </div>
+      <div class="mt-4">
+       <img alt="Graph showing website views over a week" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-cHqMIih5EpwmqcV03a2CBu6R.png?st=2024-09-16T15%3A35%3A24Z&amp;se=2024-09-16T17%3A35%3A24Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-16T00%3A02%3A34Z&amp;ske=2024-09-17T00%3A02%3A34Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=auHXAmSkn0ousHJaPwNOZ7Erzn52dj1gv6cSh8kPLWI%3D" width="300"/>
+      </div>
+      <p class="text-white mt-4">
+       Last Campaign Performance
+      </p>
+      <p class="text-white">
+       campaign sent 2 days ago
+      </p>
+     </div>
+     <div class="bg-green-500 p-4 rounded shadow">
+      <div class="flex justify-between items-center">
+       <h3 class="text-white">
+        Daily Sales
+       </h3>
+       <i class="fas fa-ellipsis-h text-white">
+       </i>
+      </div>
+      <div class="mt-4">
+       <img alt="Graph showing daily sales over a year" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-gIhtuIo3Gsl6CmJTZ4uKcfRp.png?st=2024-09-16T15%3A35%3A28Z&amp;se=2024-09-16T17%3A35%3A28Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-16T00%3A23%3A44Z&amp;ske=2024-09-17T00%3A23%3A44Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=LOYG/qd7P9trwQ1hAKt7WqdMpUmoOi9ilGKdfqovUBs%3D" width="300"/>
+      </div>
+      <p class="text-white mt-4">
+       (+15%) increase in today sales.
+      </p>
+      <p class="text-white">
+       updated 4 min ago
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded shadow">
+      <div class="flex justify-between items-center">
+       <h3 class="text-white">
+        Completed Tasks
+       </h3>
+       <i class="fas fa-ellipsis-h text-white">
+       </i>
+      </div>
+      <div class="mt-4">
+       <img alt="Graph showing completed tasks over a year" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-OAraaiOA1PPYtzfhGeN5OiqY.png?st=2024-09-16T15%3A35%3A25Z&amp;se=2024-09-16T17%3A35%3A25Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-15T23%3A51%3A53Z&amp;ske=2024-09-16T23%3A51%3A53Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=OVzmvJ95NKaLZK5NyfaPkctq7bUs9Cm3yJaNTSEXsV8%3D" width="300"/>
+      </div>
+      <p class="text-white mt-4">
+       Last Campaign Performance
+      </p>
+      <p class="text-white">
+       just updated
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
